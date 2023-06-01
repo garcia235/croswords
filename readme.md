@@ -1,6 +1,6 @@
 *Palavras cruzadas com js*
 
 Integrantes:
--Arthur Garcia
--Cauê Rezende
+-Arthur Garcia<br>
+-Cauê Rezende<br>
 -Felipe Dourado
