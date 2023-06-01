@@ -8,8 +8,6 @@
     margin: 0px;
     padding: 0px;
 }
-
-
 .conteudo {
     display: flex;
     flex-direction: row;
@@ -17,6 +15,7 @@
 
 #cruzadinha {
     padding: 4px 4px;
+    margin-top: 12vh;
 }
 
 input {
@@ -52,7 +51,7 @@ td {
     width: 600px;
     height: 70vh;
     padding: 2rem;
-    margin-top: 15px;
+    margin-top: 10vh;
     margin-right: 15px;
     text-align: justify;
     background: linear-gradient(180deg, #223033 10%, #243753 70%);
