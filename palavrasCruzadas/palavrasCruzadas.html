@@ -6,35 +6,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./palavrasCruzadas.css">
-    <link rel="Logo icon" href="bovinusLogo.svg">
-    <title>Cruzadinha</title>
+    <script src="./cruzadinha.js"></script>
+    <link rel="Logo icon" href="">
+    <title>Palavras Cruzadas</title>
 </head>
 
-<body>
+<body onload="carregar()">
+
 
     <div class="conteudo">
 
         <div id="cruzadinha">
-            
+
             <table>
                 <tr>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input disabled placeholder="13"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input disabled placeholder="16"></td>
+                    <td><input disabled placeholder="1"></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><input disabled placeholder="11"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="text" id="palavra1" maxlength="1"></td>
+                    <td></td>
+                    <td><input disabled placeholder="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input disabled placeholder="4"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input disabled placeholder="5"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="text" id="palavra1" maxlength="1"></td>
+                    <td></td>
+                    <td><input type="text" id="palavra2" maxlength="1"></td>
+                    <td></td>
+                    <td><input disabled placeholder="3"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input disabled placeholder=""></td>
+                    <td><input type="text" id="palavra5" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input disabled placeholder=""></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                    <td><input type="text" id="palavra3" maxlength="1"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="text" id="palavra1" maxlength="1"></td>
+                    <td></td>
+                    <td><input type="text" id="palavra2" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra4" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra5" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><input disabled placeholder="6"></td>
+                    <td><input type="text" id="palavra1" maxlength="1"></td>
+                    <td><input type="text" id="palavra6" maxlength="1"></td>
+                    <td><input type="text" id="palavra2" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra5" maxlength="1"></td>
+                    <td></td>
+                    <td><input disabled placeholder="7"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input disabled placeholder=""></td>
+                    <td></td>
+                    <td><input disabled placeholder="9"></td>
+                    <td></td>
+                    <td><input disabled placeholder="10"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra5" maxlength="1"></td>
+                    <td></td>
+                    <td><input type="text" id="palavra7" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -45,133 +185,22 @@
 
                 <tr>
                     <td><input disabled placeholder="8"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input disabled placeholder="-"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input disabled placeholder="-"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_8" maxlength="1"></td>
+                    <td><input type="text" id="palavra1" maxlength="1"></td>
+                    <td><input type="text" id="palavra8" maxlength="1"></td>
+                    <td><input type="text" id="palavra8" maxlength="1"></td>
+                    <td><input type="text" id="palavra8" maxlength="1"></td>
+                    <td><input type="text" id="palavra8" maxlength="1"></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_13" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_16" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_11" maxlength="1"></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_16" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input disabled placeholder="6"></td>
-                    <td><input type="text" id="in_palavra_6" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_6" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_6" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input disabled placeholder="2"></td>
-                    <td><input type="text" id="in_palavra_2" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_16" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_2" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_11" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input disabled placeholder="-"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input disabled placeholder="4"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input disabled placeholder="14"></td>
-                    <td><input type="text" id="in_palavra_11" maxlength="1"></td>
-                    <td></td>
+                    <td><input disabled placeholder="11"></td>
                     <td></td>
                     <td></td>
                     <td><input disabled placeholder="12"></td>
                     <td></td>
+                    <td><input disabled placeholder=""></td>
                     <td></td>
-                    <td><input disabled placeholder="5"></td>
-                </tr>
-
-                <tr>
+                    <td><input type="text" id="palavra7" maxlength="1"></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -180,159 +209,118 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_16" maxlength="1"></td>
-                    <td></td>
-                    <td><input disabled placeholder="3"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_3" maxlength="1"></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_16" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_4" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_14" maxlength="1"></td>
-                    <td><input disabled placeholder="-"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_12" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_5" maxlength="1"></td>
                     <td></td>
                 </tr>
 
                 <tr>
                     <td></td>
+                    <td><input type="text" id="palavra1" maxlength="1"></td>
+                    <td></td>
+                    <td><input type="text" id="palavra9" maxlength="1"></td>
+                    <td></td>
+                    <td><input type="text" id="palavra10" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input disabled placeholder="14"></td>
+                    <td><input type="text" id="palavra11" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra12" maxlength="1"></td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra5" maxlength="1"></td>
+                    <td></td>
+                    <td><input type="text" id="palavra7" maxlength="1"></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td> <input disabled placeholder="9"></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><input type="text" id="in_palavra_16" maxlength="1"></td>
                     <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_4" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_11" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_12" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_5" maxlength="1"></td>
                     <td></td>
                 </tr>
 
                 <tr>
+                    <td></td>
+                    <td><input type="text" id="palavra1" maxlength="1"></td>
+                    <td></td>
+                    <td><input type="text" id="palavra9" maxlength="1"></td>
+                    <td><input disabled placeholder="13"></td>
+                    <td><input type="text" id="palavra10" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td><input type="text" id="palavra13" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="text" id="palavra1" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra10" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra14" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra12" maxlength="1"></td>
+                    <td></td>
+                    <td><input type="text" id="palavra5" maxlength="1"></td>
+                    <td></td>
+                    <td><input type="text" id="palavra7" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
                     <td><input disabled placeholder="15"></td>
-                    <td><input type="text" id="in_palavra_15" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_15" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_15" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_15" maxlength="1"></td>
-                    <td><input disabled placeholder="-"></td>
-                    <td><input type="text" id="in_palavra_15" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_15" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_15" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_15" maxlength="1"></td>
+                    <td><input type="text" id="palavra15" maxlength="1"></td>
+                    <td><input type="text" id="palavra15" maxlength="1"></td>
+                    <td><input type="text" id="palavra10" maxlength="1"></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><input type="text" id="in_palavra_11" maxlength="1"></td>
+                    <td><input type="text" id="palavra12" maxlength="1"></td>
                     <td></td>
+                    <td><input type="text" id="palavra5" maxlength="1"></td>
                     <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_12" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_5" maxlength="1"></td>
-                    <td></td>
-                </tr>
-
-                <tr>
+                    <td><input type="text" id="palavra7" maxlength="1"></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><input type="text" id="in_palavra_9" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_11" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input disabled placeholder="-"></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_5" maxlength="1"></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td><input disabled placeholder="7"></td>
-                    <td><input type="text" id="in_palavra_7" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_7" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_7" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_7" maxlength="1"></td>
-                    <td><input type="text" id="in_palavra_7" maxlength="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><input disabled placeholder="10"></td>
-                    <td></td>
-                    <td><input type="text" id="in_palavra_12" maxlength="1"></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -347,6 +335,16 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td><input disabled placeholder=""></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input disabled placeholder=""></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra7" maxlength="1"></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -355,12 +353,30 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                </tr>
+
+                <tr>
                     <td></td>
                     <td></td>
-                    <td><input disabled placeholder="1"></td>
-                    <td><input  id="in_palavra_1" maxlength="1"></td>
-                    <td><input  id="in_palavra_1" maxlength="1"></td>
-                    <td><input  id="in_palavra_1" maxlength="1"></td>
+                    <td></td>
+                    <td><input disabled placeholder="16"></td>
+                    <td><input type="text" id="palavra16" maxlength="1"></td>
+                    <td><input type="text" id="palavra16" maxlength="1"></td>
+                    <td><input type="text" id="palavra16" maxlength="1"></td>
+                    <td><input type="text" id="palavra16" maxlength="1"></td>
+                    <td><input type="text" id="palavra16" maxlength="1"></td>
+                    <td><input type="text" id="palavra16" maxlength="1"></td>
+                    <td><input type="text" id="palavra16" maxlength="1"></td>
+                    <td><input disabled placeholder=""></td>
+                    <td><input type="text" id="palavra12" maxlength="1"></td>
+                    <td><input type="text" id="palavra16" maxlength="1"></td>
+                    <td><input type="text" id="palavra16" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -375,6 +391,12 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td><input type="text" id="palavra17" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra12" maxlength="1"></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -386,9 +408,30 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><input type="text" id="in_palavra_10" maxlength="1"></td>
                     <td></td>
-                    <td><input type="text" id="in_palavra_12" maxlength="1"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="palavra17" maxlength="1"></td>
+                    <td><input disabled placeholder="18"></td>
+                    <td><input type="text" id="palavra18" maxlength="1"></td>
+                    <td><input type="text" id="palavra18" maxlength="1"></td>
+                    <td><input type="text" id="palavra18" maxlength="1"></td>
+                    <td><input type="text" id="palavra12" maxlength="1"></td>
+                    <td><input type="text" id="palavra18" maxlength="1"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -398,87 +441,108 @@
         </div>
 
         <div id="dicas">
-            <h3>Ajuda?</h3>
+            <h3>Dica</h3>
 
-            <div id="dica_1">
-                <p>1- Parte de um sistema computacional, que realiza as instruções de um programa de computador, que executa a aritmética básica, orientado por um padrão binário 0 e 1 que possibilita a entrada, o processamento e a saída de dados.
+            <div id="univertarios_1">
+                <p>
+                    1 - É o cérebro do computador, responsável por executar instruções e processar dados.
                 </p>
             </div>
 
-            <div id="dica_2" style="display: none;">
-                <p>2- É um circuito digital que realiza operações de adição e booleana AND. A ULA é uma peça fundamental da unidade central de processamento, e até dos mais simples microprocessadores.
+            <div id="univertarios_2" style="display: none;">
+                <p>
+                    2 - Parte da CPU responsável por realizar operações lógicas e aritméticas.
                 </p>
             </div>
 
-            <div id="dica_3" style="display: none;">
-                <p>3- São circuitos digitais capazes de armazenar e deslocar informações binárias, e são tipicamente usados como um dispositivo de armazenamento temporário.
+            <div id="univertarios_3" style="display: none;">
+                <p>
+                    3 - Servem para armazenar temporariamente dados, instruções e endereços de memória frequentemente acessados.
                 </p>
             </div>
 
-            <div id="dica_4" style="display: none;">
-                <p>4- Memória que funciona como um espaço de trabalho, mas temporário. Após lidar com todos os dados e informações, estes voltam a ser armazenados no disco rígido ou SSD.
+            <div id="univertarios_4" style="display: none;">
+                <p>
+                    4- Armazena dados temporariamente.
                 </p>
             </div>
 
-            <div id="dica_5" style="display: none;">
-                <p>5- Memória que armazena firmwares ou pequenos softwares que funcionam apenas em um hardware específico.
+            <div id="univertarios_5" style="display: none;">
+                <p>
+                    5- Armazena dados permanentes.
                 </p>
             </div>
 
-            <div id="dica_6" style="display: none;">
-                <p>6- Memória que armazena as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter sido interrompida.
+            <div id="univertarios_6" style="display: none;">
+                <p>
+                    6- Pode ser apagada e reprogramada.
                 </p>
             </div>
 
-            <div id="dica_7" style="display: none;">
-                <p>7- Memória de armazenamento de dados que usa uma memória não volátil.
+            <div id="univertarios_7" style="display: none;">
+                <p>
+                    7- Memória não volátil reprogramável eletronicamente.
                 </p>
             </div>
 
-            <div id="dica_8" style="display: none;">
-                <p>8- Memória que armazena grandes quantidades de informações. Os dados armazenados nas memórias de massa não são perdidos quando desligamos o equipamento, ao contrário da memória ram.
+            <div id="univertarios_8" style="display: none;">
+                <p>
+                    8- Armazena dados permanentemente.
                 </p>
             </div>
 
-            <div id="dica_9" style="display: none;">
-                <p>9- É o método que permite que um dispositivo de entrada e saída envie ou receba dados diretamente da memória principal, ignorando a CPU, acelerando as operações que envolvem a memória.
+            <div id="univertarios_9" style="display: none;">
+                <p>
+                    9-  Permite transferência direta de dados entre dispositivos periféricos e memória, sem intervenção da CPU.
                 </p>
             </div>
 
-            <div id="dica_10" style="display: none;">
-                <p>10- É um mecanismo fundamental para permitir à CPU acessar memórias e/ou periféricos externos
+            <div id="univertarios_10" style="display: none;">
+                <p>
+                    10- Sinal utilizado para selecionar um dispositivo específico em um barramento de dados.
                 </p>
             </div>
 
-            <div id="dica_11" style="display: none;">
-                <p>11- É uma arquitetura de barramento de computador usada para transferir dados entre dispositivos identificados pelo endereço de hardware da memória física (o endereço físico), que é armazenado na forma de números binários para permitir que o barramento de dados acesse o armazenamento de memória.
+            <div id="univertarios_11" style="display: none;">
+                <p>
+                    11- Transmite os dados entre o processador, memória e dispositivos.
                 </p>
             </div>
 
-            <div id="dica_12" style="display: none;">
-                <p>12- É um dispositivo em que através do interior de um computador são transportados dados e informações importantes.
-
+            <div id="univertarios_12" style="display: none;">
+                <p>
+                    12- Barramento de dados. Transmite os dados entre o processador, memória e dispositivos.
                 </p>
             </div>
 
-            <div id="dica_13" style="display: none;">
-                <p>13- É um processador que possui recursos de processamento poderosos e muitos mais núcleos. Ele é indicado para tarefas  exigentes, como a criação e edição de conteúdo com o pacote Adobe e multitarefas. O processamento dessas atividades é feito velozmente sem dificuldade.
+            <div id="univertarios_13" style="display: none;">
+                <p>13- É um processador que possui recursos de processamento poderosos e muitos mais núcleos. Ele é inunivertariosdo para tarefas  exigentes, como a criação e edição de conteúdo com o pacote Adobe e multitarefas. O processamento dessas atividades é feito velozmente sem dificuldade.
                 </p>
             </div>
 
-            <div id="dica_14" style="display: none;">
+            <div id="univertarios_14" style="display: none;">
                 <p>14- É um processador com quatro núcleos e conta com recursos como o Turbo Boost, que aumenta a frequência de operação dos núcleos. Além disso, esses processadores tendem a ser mais rápidos e até figuram em linhas especiais, voltadas a entusiastas e gamers.
                 </p>
             </div>
 
-            <div id="dica_15" style="display: none;">
-                <p>15- É um tipo de processador que comporta quatro núcleos de processamento de dados. Estes modelos de microprocessadores fazem parte da nova onda de tecnologias para processadores que surgiram na segunda metade da década de 2000.
-
+            <div id="univertarios_15" style="display: none;">
+                <p>
+                    15- Processador com dois núcleos de processamento. 
                 </p>
             </div>
 
-            <div id="dica_16" style="display: none;">
-                <p>16- É um  processador no qual possui dois ou mais núcleos de processamento no interior de um único chip. Estes dois ou mais núcleos são responsáveis por dividir as tarefas entre si, ou seja, permitem trabalhar em um ambiente multitarefa.
+            <div id="univertarios_16" style="display: none;">
+                <p>16- Processador com quatro núcleos de processamento.
+                </p>
+            </div>
+            <div id="univertarios_17" style="display: none;">
+                <p>
+                    17- Podem ser executadas simultaneamente em sistemas com suporte a multithreading.
+                </p>
+            </div>
+            <div id="univertarios_18" style="display: none;">
+                <p>
+                    18- Memória de acesso rápido que armazena dados recentemente acessados pela CPU
                 </p>
             </div>
 
@@ -499,10 +563,11 @@
 
             </div>
             <div id="resultado" class="resultado"></div>
-            <div class="erro_resposta" id="erro_resposta"></div>
+            <div class="erro_resposta" id="resposta_errada"></div>
 
         </div>
 
     </div>
 </body>
+
 </html>
