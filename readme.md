@@ -1,6 +1,6 @@
 *Palavras cruzadas com js*
 
-Integrantes:
--Arthur Garcia
--Cauê Rezende
+Integrantes:<br>
+-Arthur Garcia<br>
+-Cauê Rezende<br>
 -Felipe Dourado
