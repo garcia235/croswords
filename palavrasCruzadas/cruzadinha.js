@@ -16,7 +16,7 @@ function resposta() {
     } else if (resposta_correta == 6) {
         resultado.innerHTML = `DMA`
     } else if (resposta_correta == 7) {
-        resultado.innerHTML = `TREADS`
+        resultado.innerHTML = `THREADS`
     } else if (resposta_correta == 8) {
         resultado.innerHTML = `CACHE`
     } else if (resposta_correta == 9) {
@@ -148,17 +148,17 @@ function verificar() {
         }
     } else if (resposta_correta == 4) {
         var resposta4 = palavra3[5].value
-        resposta4 += palavra4[0].value
+        resposta4 += palavra4.value
         
 
         if (resposta4 == "i7" || resposta4 == 'I7') {
             palavra3[5].style = "border-color: green;";
-            palavra4[0].style = "border-color: green;";
+            palavra4.style = "border-color: green;";
 
             proxima()
         } else {
             palavra3[5].style = "border-color: red;";
-            palavra4[0].style = "border-color: red;";
+            palavra4.style = "border-color: red;";
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
 
@@ -197,19 +197,19 @@ function verificar() {
 
     } else if (resposta_correta == 6) {
         var resposta6 = palavra1[3].value
-        resposta6 += palavra6[0].value
+        resposta6 += palavra6.value
         resposta6 += palavra2[2].value
 
 
         if (resposta6 == 'dma' || resposta6 == 'DMA') {
             palavra1[3].style = "border-color: green;";
-            palavra6[0].style = "border-color: green;";
+            palavra6.style = "border-color: green;";
             palavra2[2].style = "border-color: green;";
 
             proxima()
         } else {
             palavra1[3].style = "border-color: red;";
-            palavra6[0].style = "border-color: red;";
+            palavra6.style = "border-color: red;";
             palavra2[2].style = "border-color: red;";
 
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
@@ -219,75 +219,59 @@ function verificar() {
         var resposta7 = palavra7[0].value
         resposta7 += palavra7[1].value
         resposta7 += palavra7[2].value
+        resposta7 += palavra13[10].value
         resposta7 += palavra7[3].value
         resposta7 += palavra7[4].value
+        resposta7 += palavra7[5].value
+
 
 
         if (resposta7 == 'threads' || resposta7 == 'THREADS') {
             palavra7[0].style = "border-color: green;";
             palavra7[1].style = "border-color: green;";
             palavra7[2].style = "border-color: green;";
+            palavra13[10].style = "border-color: green;";
             palavra7[3].style = "border-color: green;";
             palavra7[4].style = "border-color: green;";
+            palavra7[5].style = "border-color: green;";
+            
+
 
             proxima()
         } else {
             palavra7[0].style = "border-color: red;";
             palavra7[1].style = "border-color: red;";
             palavra7[2].style = "border-color: red;";
+            palavra13[10].style = "border-color: red;";
             palavra7[3].style = "border-color: red;";
             palavra7[4].style = "border-color: red;";
+            palavra7[5].style = "border-color: red;";
+
 
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
     } else if (resposta_correta == 8) {
-        var resposta8 = palavra8[0].value
+        var resposta8 = palavra1[4].value
+        resposta8 += palavra8[0].value
         resposta8 += palavra8[1].value
         resposta8 += palavra8[2].value
         resposta8 += palavra8[3].value
-        resposta8 += palavra8[4].value
-        resposta8 += palavra8[5].value
-        resposta8 += palavra8[6].value
-        resposta8 += palavra8[7].value
-        resposta8 += palavra8[8].value
-        resposta8 += palavra8[9].value
-        resposta8 += palavra8[10].value
-        resposta8 += palavra8[11].value
-        resposta8 += palavra8[12].value
-        resposta8 += palavra8[13].value
 
-        if (resposta8 == 'memoriademassa') {
+
+        if (resposta8 == 'cache') {
+            palavra1[4].style = "border-color: green;";
             palavra8[0].style = "border-color: green;";
             palavra8[1].style = "border-color: green;";
             palavra8[2].style = "border-color: green;";
             palavra8[3].style = "border-color: green;";
-            palavra8[4].style = "border-color: green;";
-            palavra8[5].style = "border-color: green;";
-            palavra8[6].style = "border-color: green;";
-            palavra8[7].style = "border-color: green;";
-            palavra8[8].style = "border-color: green;";
-            palavra8[9].style = "border-color: green;";
-            palavra8[10].style = "border-color: green;";
-            palavra8[11].style = "border-color: green;";
-            palavra8[12].style = "border-color: green;";
-            palavra8[13].style = "border-color: green;";
 
             proxima()
         } else {
+            palavra1[4].style = "border-color: red;";
             palavra8[0].style = "border-color: red;";
             palavra8[1].style = "border-color: red;";
             palavra8[2].style = "border-color: red;";
             palavra8[3].style = "border-color: red;";
-            palavra8[4].style = "border-color: red;";
-            palavra8[5].style = "border-color: red;";
-            palavra8[6].style = "border-color: red;";
-            palavra8[7].style = "border-color: red;";
-            palavra8[8].style = "border-color: red;";
-            palavra8[9].style = "border-color: red;";
-            palavra8[10].style = "border-color: red;";
-            palavra8[11].style = "border-color: red;";
-            palavra8[12].style = "border-color: red;";
-            palavra8[13].style = "border-color: red;";
 
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
@@ -311,68 +295,57 @@ function verificar() {
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
     } else if (resposta_correta == 10) {
-        var resposta9 = palavra1[0].value
-        resposta9 += palavra10.value
-       
-        if (resposta9 == 'cs') {
-            palavra1[0].style = "border-color: green;";
-            palavra10.style = "border-color: green;";
-   
+        var resposta10 = palavra8[3].value
+        resposta10 += palavra10[0].value
+        resposta10 += palavra10[1].value
+        resposta10 += palavra10[2].value
+        resposta10 += palavra10[3].value
+
+
+        if (resposta10 == 'eprom') {
+            palavra8[3].style = "border-color: green;";
+            palavra10[0].style = "border-color: green;";
+            palavra10[1].style = "border-color: green;";
+            palavra10[2].style = "border-color: green;";
+            palavra10[3].style = "border-color: green;";
 
             proxima()
         } else {
-            palavra1[0].style = "border-color: red;";
-            palavra10.style = "border-color: red;";
-       
+            palavra8[3].style = "border-color: red;";
+            palavra10[0].style = "border-color: red;";
+            palavra10[1].style = "border-color: red;";
+            palavra10[2].style = "border-color: red;";
+            palavra10[3].style = "border-color: red;";
 
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
 
     } else if (resposta_correta == 11) {
-        var resposta11 = palavra8[13].value
-        resposta11 += palavra11[0].value
-        resposta11 += palavra6[0].value
-        resposta11 += palavra11[1].value
-        resposta11 += palavra11[2].value
-        resposta11 += palavra3[4].value
-        resposta11 += palavra11[3].value
-        resposta11 += palavra11[4].value
-        resposta11 += palavra11[5].value
+        var resposta11 = palavra11.value
+        resposta11 += palavra13[3].value
        
-        if (resposta11 == 'adressbus') {
-            palavra8[13].style = "border-color: green;";
-            palavra11[0].style = "border-color: green;";
-            palavra6[0].style = "border-color: green;";
-            palavra11[1].style = "border-color: green;";
-            palavra11[2].style = "border-color: green;";
-            palavra3[4].style = "border-color: green;";
-            palavra11[3].style = "border-color: green;";
-            palavra11[4].style = "border-color: green;";
-            palavra11[5].style = "border-color: green;";
-           
+        if (resposta11 == 'cs') {
+            palavra11.style = "border-color: green;";
+            palavra13[3].style = "border-color: green;";
+   
 
             proxima()
         } else {
-            palavra8[13].style = "border-color: red;";
-            palavra11[0].style = "border-color: red;";
-            palavra6[0].style = "border-color: red;";
-            palavra11[1].style = "border-color: red;";
-            palavra11[2].style = "border-color: red;";
-            palavra3[4].style = "border-color: red;";
-            palavra11[3].style = "border-color: red;";
-            palavra11[4].style = "border-color: red;";
-            palavra11[5].style = "border-color: red;";
+            palavra11.style = "border-color: red;";
+            palavra13[3].style = "border-color: red;";
+       
 
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
+        
     } else if (resposta_correta == 12) {
-        var resposta12 = palavra3[8].value
-        resposta12 += palavra12[0].value
+        var resposta12 = palavra12[0].value
+        resposta12 += palavra13[6].value
         resposta12 += palavra12[1].value
         resposta12 += palavra12[2].value
         resposta12 += palavra12[3].value
-        resposta12 += palavra1[2].value
         resposta12 += palavra12[4].value
+        resposta12 += palavra12[5].value
   
        
         if (resposta12 == 'databus') {
@@ -381,7 +354,7 @@ function verificar() {
             palavra12[1].style = "border-color: green;";
             palavra12[2].style = "border-color: green;";
             palavra12[3].style = "border-color: green;";
-            palavra1[2].style = "border-color: green;";
+            palavra12[5].style = "border-color: green;";
             palavra12[4].style = "border-color: green;";
            
             proxima()
@@ -391,39 +364,73 @@ function verificar() {
             palavra12[1].style = "border-color: red;";
             palavra12[2].style = "border-color: red;";
             palavra12[3].style = "border-color: red;";
-            palavra1[2].style = "border-color: red;";
+            palavra12[5].style = "border-color: red;";
             palavra12[4].style = "border-color: red;";
 
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
     } else if (resposta_correta == 13) {
-        var resposta9 = palavra8[5].value
-        resposta9 += palavra13.value
+        var resposta13 = palavra10[1].value
+        resposta13 += palavra13[0].value
+        resposta13 += palavra13[1].value
+        resposta13 += palavra13[2].value
+        resposta13 += palavra13[3].value
+        resposta13 += palavra13[4].value
+        resposta13 += palavra13[5].value
+        resposta13 += palavra13[6].value
+        resposta13 += palavra13[7].value
+        resposta13 += palavra13[8].value
+        resposta13 += palavra13[9].value
+        resposta13 += palavra13[10].value
+        resposta13 += palavra13[11].value
+  
        
-        if (resposta9 == 'i7') {
-            palavra8[5].style = "border-color: green;";
-            palavra13.style = "border-color: green;";
-   
-
+        if (resposta13 == 'registradores') {
+            palavra10[1].style = "border-color: green;";
+            palavra13[0].style = "border-color: green;";
+            palavra13[1].style = "border-color: green;";
+            palavra13[2].style = "border-color: green;";
+            palavra13[3].style = "border-color: green;";
+            palavra13[4].style = "border-color: green;";
+            palavra13[5].style = "border-color: green;";
+            palavra13[6].style = "border-color: green;";
+            palavra13[7].style = "border-color: green;";
+            palavra13[8].style = "border-color: green;";
+            palavra13[9].style = "border-color: green;";
+            palavra13[10].style = "border-color: green;";
+            palavra13[11].style = "border-color: green;";
+           
             proxima()
         } else {
-            palavra8[5].style = "border-color: red;";
-            palavra13.style = "border-color: red;";
-       
+            palavra10[1].style = "border-color: red;";
+            palavra13[0].style = "border-color: red;";
+            palavra13[1].style = "border-color: red;";
+            palavra13[2].style = "border-color: red;";
+            palavra13[3].style = "border-color: red;";
+            palavra13[4].style = "border-color: red;";
+            palavra13[5].style = "border-color: red;";
+            palavra13[6].style = "border-color: red;";
+            palavra13[7].style = "border-color: red;";
+            palavra13[8].style = "border-color: red;";
+            palavra13[9].style = "border-color: red;";
+            palavra13[10].style = "border-color: red;";
+            palavra13[11].style = "border-color: red;";
+           
+
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
     } else if (resposta_correta == 14) {
-        var resposta9 = palavra3[3].value
-        resposta9 += palavra14.value
+        var resposta14 = palavra13[2].value
+        resposta14 += palavra14.value
        
-        if (resposta9 == 'i5') {
-            palavra3[3].style = "border-color: green;";
+        if (resposta14 == 'i5') {
+            palavra13[2].style = "border-color: green;";
             palavra14.style = "border-color: green;";
    
 
             proxima()
         } else {
-            palavra3[3].style = "border-color: red;";
+            palavra13[2].style = "border-color: red;";
             palavra14.style = "border-color: red;";
        
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
@@ -431,70 +438,113 @@ function verificar() {
     } else if (resposta_correta == 15) {
         var resposta15 = palavra15[0].value
         resposta15 += palavra15[1].value
-        resposta15 += palavra15[2].value
-        resposta15 += palavra15[3].value
-        resposta15 += palavra15[4].value
-        resposta15 += palavra15[5].value
-        resposta15 += palavra15[6].value
-        resposta15 += palavra15[7].value
+        resposta15 += palavra10[3].value
 
-        if (resposta15 == 'quadcore') {
+        if (resposta15 == 'rom') {
             palavra15[0].style = "border-color: green;";
             palavra15[1].style = "border-color: green;";
-            palavra15[2].style = "border-color: green;";
-            palavra15[3].style = "border-color: green;";
-            palavra15[4].style = "border-color: green;";
-            palavra15[5].style = "border-color: green;";
-            palavra15[6].style = "border-color: green;";
-            palavra15[7].style = "border-color: green;";
+            palavra10[3].style = "border-color: green;";
 
             proxima()
         } else {
             palavra15[0].style = "border-color: red;";
             palavra15[1].style = "border-color: red;";
-            palavra15[2].style = "border-color: red;";
-            palavra15[3].style = "border-color: red;";
-            palavra15[4].style = "border-color: red;";
-            palavra15[5].style = "border-color: red;";
-            palavra15[6].style = "border-color: red;";
-            palavra15[7].style = "border-color: red;";
+            palavra10[3].style = "border-color: red;";
 
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
     } else if (resposta_correta == 16) {
-        var resposta16 = palavra8[7].value
-        resposta16 += palavra16[0].value
+        var resposta16 = palavra16[0].value
         resposta16 += palavra16[1].value
         resposta16 += palavra16[2].value
         resposta16 += palavra16[3].value
         resposta16 += palavra16[4].value
         resposta16 += palavra16[5].value
-        resposta16 += palavra15[7].value
-
-        if (resposta16 == 'dualcore') {
-            palavra8[7].style = "border-color: green;";
-            palavra16[0].style = "border-color: green;"
+        resposta16 += palavra16[6].value
+        resposta16 += palavra12[3].value
+        resposta16 += palavra16[7].value
+        resposta16 += palavra16[8].value
+       
+        if (resposta16 == 'addressbus') {
+            palavra16[0].style = "border-color: green;";
             palavra16[1].style = "border-color: green;";
             palavra16[2].style = "border-color: green;";
             palavra16[3].style = "border-color: green;";
             palavra16[4].style = "border-color: green;";
             palavra16[5].style = "border-color: green;";
-            palavra15[7].style = "border-color: green;";
+            palavra16[6].style = "border-color: green;";
+            palavra12[3].style = "border-color: green;";
+            palavra16[7].style = "border-color: green;";
+            palavra16[8].style = "border-color: green;";
+           
 
             proxima()
         } else {
-            palavra8[7].style = "border-color: red;";
-            palavra16[0].style = "border-color: red;"
+            palavra16[0].style = "border-color: red;";
             palavra16[1].style = "border-color: red;";
             palavra16[2].style = "border-color: red;";
             palavra16[3].style = "border-color: red;";
             palavra16[4].style = "border-color: red;";
             palavra16[5].style = "border-color: red;";
-            palavra15[7].style = "border-color: red;";
+            palavra16[6].style = "border-color: red;";
+            palavra12[3].style = "border-color: red;";
+            palavra16[7].style = "border-color: red;";
+            palavra16[8].style = "border-color: red;";
+           
+
+            resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
+        }
+
+    }
+    else if (resposta_correta == 17) {
+        var resposta17 = palavra16[3].value
+        resposta17 += palavra17[0].value
+        resposta17 += palavra17[1].value
+
+
+        if (resposta17 == 'ram' || resposta17 == 'RAM') {
+            palavra16[3].style = "border-color: green;";
+            palavra17[0].style = "border-color: green;";
+            palavra17[1].style = "border-color: green;";
+
+            proxima()
+        } else {
+            palavra16[3].style = "border-color: red;";
+            palavra17[0].style = "border-color: red;";
+            palavra17[1].style = "border-color: red;";
 
             resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
         }
     }
+    else if (resposta_correta == 18) {
+        var resposta18 = palavra18[0].value
+        resposta18 += palavra18[1].value
+        resposta18 += palavra18[2].value
+        resposta18 += palavra12[5].value
+        resposta18 += palavra18[3].value
+
+        
+
+
+        if (resposta18 == 'flash' || resposta18 == 'FLASH') {
+            palavra18[0].style = "border-color: green;";
+            palavra18[1].style = "border-color: green;";
+            palavra18[2].style = "border-color: green;";
+            palavra12[5].style = "border-color: green;";
+            palavra18[3].style = "border-color: green;";
+
+            proxima()
+        } else {
+            palavra18[0].style = "border-color: red;";
+            palavra18[1].style = "border-color: red;";
+            palavra18[2].style = "border-color: red;";
+            palavra12[5].style = "border-color: red;";
+            palavra18[3].style = "border-color: red;";
+
+            resposta_errada.innerHTML = `<img src="erro.jpg" alt="robo" width="250px" height="250px">`
+        }
+    }
+    
 }
 
 function proxima() {
@@ -578,8 +628,20 @@ function proxima() {
         resposta_correta++
     } else if (resposta_correta == 16) {
         universitarios_16.style.display = 'none'
+        universitarios_17.style.display = 'block'
+
+        resposta_correta++
+    }
+    else if (resposta_correta == 17) {
+        universitarios_17.style.display = 'none'
+        universitarios_18.style.display = 'block'
+
+        resposta_correta++
+    }
+    else {
+        universitarios_18.style.display = 'none'
         universitarios_1.style.display = 'block'
 
-        resposta_correta = 1
-    }
+        resposta_correta = 1;
+    } 
 }
